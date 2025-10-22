@@ -4,11 +4,11 @@
 
 ## 安装
 
-无论是linux/mac/windows，都需要使用下载预编译的二进制包，也可以源码编译。二进制包下载地址: https://go.dev/doc/manage-install
+无论是linux/mac/windows，都需要下载预编译的二进制包来安装，当然也可以源码编译，但是整个go生态的作风似乎都更倾向于直接提供二进制包，毕竟跨平台是go的一大特性，我很喜欢这个作风。go二进制包下载地址: https://go.dev/doc/manage-install
 
 本项目的demo1在dockerfile中使用ubuntu镜像安装了golang，并且每个demo都会通过devcontainer的方式来运行go环境。具体的Dockerfile代码见demo中的Dockerfile文件。
 
-参考: [golang官方安装文档](https://go.dev/doc/install)
+go的安装参考 [golang官方文档: Download and install](https://go.dev/doc/install)
 
 ### 多版本管理
 
@@ -17,6 +17,8 @@
 1. 先执行`go install golang.org/dl/go1.10.7@latest` 这个命令会下载一个version wrapper(版本包装器)，是一个用来下载对应版本go的工具。
 
 2. 再执行`go1.10.7 download`（需要先把`go install`的安装目录添加到PATH环境变量），这一步会使用包装器下载完整的go，包括编译器、标准库和文档。
+
+多版本管理参考 [golang官方文档: Managing Go installations](https://go.dev/doc/manage-install)
 
 ---
 
