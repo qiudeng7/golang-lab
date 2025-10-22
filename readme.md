@@ -20,6 +20,8 @@ go的安装参考 [golang官方文档: Download and install](https://go.dev/doc/
 
 多版本管理参考 [golang官方文档: Managing Go installations](https://go.dev/doc/manage-install)
 
+> go常常会给我这种感觉 “这种功能居然是由官方来提供的吗”，从这个角度来看，go生态还是比较关注development experience（开发体验）的，我很欣赏。不过听说go的语法比较丑陋，我已经做好了心理准备。
+
 ---
 
 1. 关于`go install`，这个命令用来下载一些go中的包
