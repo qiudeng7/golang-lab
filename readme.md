@@ -16,7 +16,7 @@ go的安装参考 [golang官方文档: Download and install](https://go.dev/doc/
 
 1. 先执行`go install golang.org/dl/go1.10.7@latest` 这个命令会下载一个version wrapper(版本包装器)，是一个用来下载对应版本go的工具。
 
-2. 再执行`go1.10.7 download`（需要先把`go install`的安装目录添加到PATH环境变量），这一步会使用包装器下载完整的go，包括编译器、标准库和文档。
+2. 再执行`go1.10.7 download`（需要先把`go install`的安装目录添加到PATH环境变量），这一步会使用包装器下载完整的go，包括编译器、标准库和文档。对于国内下载速度很慢的问题，设置环境变量`GOPROXY=https://goproxy.cn`
 
 多版本管理参考 [golang官方文档: Managing Go installations](https://go.dev/doc/manage-install)
 
