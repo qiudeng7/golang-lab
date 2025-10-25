@@ -35,7 +35,24 @@ go的安装参考 [golang官方文档: Download and install](https://go.dev/doc/
    1. 除了下载 Go 版本，通过golang.org/dl安装的版本包装器本身就是一个功能完整的命令，它复制了标准 go命令的所有功能，但作用域仅限于其对应的特定版本。
    2. 每个版本包装器都是一个独立的可执行文件，安装在$GOPATH/bin下。它不依赖系统默认的go命令。
    3. 当你运行`go1.10.7 xxx`时，它会确保其相关的环境变量（如 GOROOT）指向自己对应的工具链目录（如 ~/sdk/go1.10.7/），从而实现完美的环境隔离
-3. GO中的其他环境变量
+
+### GOPATH、GOROOT和其他环境变量
+
+有时候执行go命令会遇到这个报错
+```text
+warning: both GOPATH and GOROOT are the same directory (/usr/local/go); see https://go.dev/wiki/InstallTroubleshooting
+```
+
+GOROOT​​指的是Go语言的​​安装目录​​,GOPATH用来放个人项目代码、第三方依赖包和编译后的可执行文件，一般指向	$HOME/go。
+
+安装go的时候一般要像这样设置环境变量:
+```dockerfile
+ENV GOROOT=/usr/local/go 
+ENV GOPATH=$HOME/go
+ENV GOPROXY=https://goproxy.cn
+ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+```
+
 
 > 下表由AI生成
 > | 变量名 | 类别 | 功能描述 |
@@ -55,4 +72,3 @@ go的安装参考 [golang官方文档: Download and install](https://go.dev/doc/
 > | GODEBUG | 运行时与调试 | 启用运行时各种调试功能 |
 > | GOMAXPROCS | 运行时与调试 | 设置应用程序可使用的CPU最大核心数 |
 > | GOENV | 配置与信息 | 显示存储Go环境变量配置的文件路径。此文件通常为只读 |
-
