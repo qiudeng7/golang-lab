@@ -53,6 +53,7 @@ ENV GOPROXY=https://goproxy.cn
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
 
+下面是一些常见的GO环境变量
 
 > 下表由AI生成
 > | 变量名 | 类别 | 功能描述 |
