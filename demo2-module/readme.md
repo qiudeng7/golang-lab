@@ -57,6 +57,10 @@ require github.com/qiudeng7/golang-lab.git/demo2-module/module_1 v0.0.0-00010101
 
 然后执行`go run .`，会执行当前main包的main函数。
 
+## 异常
+
+
+
 ## 注意点
 
 import的是整个module，但是调用的时候可以直接调用module内具体的package名，package名是每个.go文件头部声明的名字，和文件名无关，当然最好是一致的。

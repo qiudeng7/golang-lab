@@ -5,6 +5,19 @@
 
 ## 前言
 
+我只是对这些领域感兴趣但是没有明确的目标，于是我找到了 [avelino/awesome-go](https://github.com/avelino/awesome-go) 这个仓库，像这样的awesome-xxx仓库里会有很多优秀的项目。
+
+浏览之后发现，我有兴趣了解的项目类型有
+1. 区块链
+2. 聊天机器人
+3. 分布式系统
+4. zero trust
+5. workflow
+
+其中workflow我了解了一下代表性项目 [cadence-workflow/cadence](https://github.com/cadence-workflow/cadence)，有点类似我在py中用过的celery，是一个异步的任务编排工具。
+
+我计划了解过go的基本机制之后着手阅读它们的源码。
+
 ### 读者说明
 
 也许我需要向“可能的读者”说明我当前的知识基础，和[我的js-lab的读者说明](https://github.com/qiudeng7/js-lab?tab=readme-ov-file#%E8%AF%BB%E8%80%85%E8%AF%B4%E6%98%8E) 是一样的，下面是一个抄录，如果js-lab的读者说明更新了，可能这里不会及时更新。
